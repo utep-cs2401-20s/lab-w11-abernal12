@@ -76,16 +76,16 @@ class newSort {
                 result[k] = L[i]; // if the if statement above is not satisfied we will then set the result at k equal to the index at L
                 i++; // once the int is set to the k we will iterate to the next index of L
             }
-            k++; // everytime we insert an element in the array of result, we will move the k position to the next empty array slot to fill it up
+            k++; // every time we insert an element in the array of result, we will move the k position to the next empty array slot to fill it up
             if (j == R.length) { // if the index at j is equal to the R length...
-                for (int i = 0; i < L.length; i++) { // we will continue to iterate through the L array
+                for (i = 0; i < L.length; i++) { // we will continue to iterate through the L array
                     result[k] = L[i]; // and begin to insert all of the elements left within the L array into the
                     k++; // after each element of the array that is inserted into the result array, we will move the k up
                 }
                 break;
             }
             if (i == L.length) { // if the index at i is equal to the length of the L length
-                for (int j = 0; j < R.length; i++) { // we will iterate through the R array
+                for (j = 0; j < R.length; i++) { // we will iterate through the R array
                     result[k] = L[i]; // and begin to add the remainder of the elements left in the R array
                     k++; // after each element of the array that is inserted into the result array, we will move the k up
                 }
